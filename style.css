@@ -1,0 +1,160 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+    font-family: "Lora", serif;
+}
+
+
+
+li,a,button{
+    
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    width: 100%;
+    position: fixed;
+    
+
+}
+
+
+
+.logo {
+    cursor: pointer;
+}
+
+.nav_links {
+    list-style: none;
+    display:flex;
+}
+
+
+
+.nav_links li {
+   padding-left: 20px;
+   padding-right: 20px;
+   height: 48.5px;
+   align-content: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+
+.nav_links li:hover{
+    background-color: black;
+    transition-duration: 0.8s;
+}
+
+.nav_links li:hover .link{
+    background-color: black;
+    color: white;
+    transition-duration: 0.8s;
+}
+
+
+button {
+    padding: 9px 25px;
+    margin: 3px;
+    border-radius: 30px;
+    border: solid black 1px;
+    transition-property: all;
+    
+
+}
+button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.8s;
+
+}
+
+.banner_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+    background-image: url(media/bannerpic.jpg);
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 10%;
+    padding-right:10%;
+}
+
+.banner_text h1 {
+    color: white;
+    background-color: rgba(0,0,0,.5);
+    text-align: center;
+    font-size: 60px;
+    font-weight: 1000;
+}
+
+.banner_text h2{
+    color: white;
+    background-color: rgba(0,0,0,.5);
+    text-align: center;
+    font-weight: 100;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+    padding: 3% 8%;
+}
+
+
+.main h2, p {
+    text-align: center;
+    
+}
+
+.pic_title{
+    text-align: center;
+    font-size: 30px;
+    margin: 8px;
+}
+
+.pics {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+}
+
+.pic_container img{
+    height: 250px;
+    width: 350px;
+    margin-top: -2.3px;
+    margin-bottom: -2.3px;
+    padding: 5px;
+}
+
+.pic_container img:hover{
+    opacity: .5;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.footer{
+    color: white;
+    background-color: black;
+    padding: 20px;
+    margin-top: 10px;
+    
+}
+
